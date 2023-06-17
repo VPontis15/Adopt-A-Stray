@@ -69,3 +69,16 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+:root {
+  --clr-bg-grey: #e3e4e4;
+  --clr-bg-accent: hwb(23 16% 0% / 0.22);
+  --clr-text-main: #0b0b0b;
+  --clr-text-accent: #ff7b29;
+  /* Font Sizes */
+  --fs-regular: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-sm: 0.9375rem;
+  /* Font Famillies */
+  --ff-main: "Roboto", sans-serif;
+}
