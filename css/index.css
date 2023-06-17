@@ -82,3 +82,12 @@ h6 {
   /* Font Famillies */
   --ff-main: "Roboto", sans-serif;
 }
+
+ul li {
+  list-style: none;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
