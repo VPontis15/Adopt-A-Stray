@@ -78,6 +78,7 @@ h6 {
   /* Font Sizes */
   --fs-regular: 1rem;
   --fs-lg: 1.125rem;
+  --fs-xl: 1.75rem;
   --fs-2xl: 2.5rem;
   --fs-3xl: 3rem;
   --fs-sm: 0.9375rem;
@@ -130,6 +131,7 @@ nav ul {
 
 .main__nav-item a {
   color: var(--clr-text-main);
+  font-weight: 600;
 }
 
 .dog {
@@ -146,6 +148,7 @@ nav ul {
 .nav-links a {
   color: white;
   border-radius: 5px;
+  font-weight: 600;
 }
 
 .advert {
@@ -215,6 +218,72 @@ nav ul {
 
 .findAPet__text-p {
   max-width: 35ch;
+}
+
+.pets {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.pets-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8.125rem;
+  padding-block: 5em;
+  justify-content: center;
+}
+
+.child2 {
+  transform: translateY(50px);
+}
+
+.pet__card {
+  max-width: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 1px 15px #0b0b0b;
+}
+
+.pet__card-image {
+  height: 200px;
+  max-width: 260px;
+}
+
+.pet__card-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75em;
+  background-color: #fff;
+}
+
+.pet__card-details--name {
+  font-size: var(--fs-xl);
+}
+
+.pet__card-details--gender {
+  width: 57px;
+  height: 57px;
+}
+
+.pets-link {
+  border-radius: 25px;
+  background-color: var(--clr-text-accent);
+  padding: 1em 1.75em;
+  color: white;
+  margin-inline: auto;
+  margin-top: 1.5rem;
+}
+
+.overlay {
+  position: absolute;
+  z-index: -100;
+  width: 100%;
+  height: 100%;
+  background-color: var(--clr-bg-accent);
+  clip-path: polygon(0 0, 67% 0, 46% 100%, 0% 100%);
 }
 
 .adopt__process-heading {
