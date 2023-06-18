@@ -87,7 +87,70 @@ ul li {
   list-style: none;
 }
 
+body {
+  line-height: 1.6;
+}
+
 a:link,
 a:visited {
   text-decoration: none;
+}
+
+.container {
+  max-width: calc(100% - 140px);
+  margin-inline: auto;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  background-color: var(--clr-bg-grey);
+  font-size: var(--fs-lg);
+
+  padding: 0.5em;
+}
+
+.main__nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 5.9rem;
+  margin-inline: auto;
+}
+
+.main__nav-item a {
+  color: var(--clr-text-main);
+}
+
+.dog {
+  width: 69px;
+  height: 89px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  border-radius: 5px;
+}
+
+.advert {
+  background-color: var(--clr-text-accent);
+  padding: 0.5em 0.75em;
+}
+
+.donate {
+  background-color: var(--clr-text-main);
+  padding: 0.5em 3em;
 }
