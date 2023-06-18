@@ -78,6 +78,8 @@ h6 {
   /* Font Sizes */
   --fs-regular: 1rem;
   --fs-lg: 1.125rem;
+  --fs-2xl: 1.625rem;
+  --fs-3xl: 3rem;
   --fs-sm: 0.9375rem;
   /* Font Famillies */
   --ff-main: "Roboto", sans-serif;
