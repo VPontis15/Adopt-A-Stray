@@ -97,7 +97,7 @@ a:visited {
 }
 
 .container {
-  max-width: calc(100% - 140px);
+  max-width: calc(100% - 260px);
   margin-inline: auto;
 }
 
@@ -105,13 +105,12 @@ header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0.5em;
 }
 
 header {
   background-color: var(--clr-bg-grey);
   font-size: var(--fs-lg);
-
-  padding: 0.5em;
 }
 
 .main__nav {
