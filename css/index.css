@@ -130,6 +130,7 @@ nav ul {
 
 .main__nav-item a {
   color: var(--clr-text-main);
+  font-weight: 700;
 }
 
 .dog {
