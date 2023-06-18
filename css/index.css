@@ -74,11 +74,11 @@ h6 {
   --clr-bg-grey: #e3e4e4;
   --clr-bg-accent: hwb(23 16% 0% / 0.22);
   --clr-text-main: #0b0b0b;
-  --clr-text-accent: rgb(245, 139, 74);
+  --clr-text-accent: #f58b4a;
   /* Font Sizes */
   --fs-regular: 1rem;
   --fs-lg: 1.125rem;
-  --fs-2xl: 1.625rem;
+  --fs-2xl: 2.5rem;
   --fs-3xl: 3rem;
   --fs-sm: 0.9375rem;
   /* Font Famillies */
@@ -215,4 +215,9 @@ nav ul {
 
 .findAPet__text-p {
   max-width: 35ch;
+}
+
+.adopt__process-heading {
+  text-align: center;
+  font-size: var(--fs-2xl);
 }
