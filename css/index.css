@@ -159,7 +159,7 @@ nav ul {
 }
 
 .hero {
-  min-height: 100vh;
+  min-height: 70vh;
   display: flex;
 }
 
@@ -180,6 +180,7 @@ nav ul {
   font-size: var(--fs-3xl);
   text-transform: uppercase;
   line-height: 1.1;
+  font-weight: 600;
 }
 
 .hero__text-heading span {
