@@ -74,7 +74,7 @@ h6 {
   --clr-bg-grey: #e3e4e4;
   --clr-bg-accent: hwb(23 16% 0% / 0.22);
   --clr-text-main: #0b0b0b;
-  --clr-text-accent: #ff7b29;
+  --clr-text-accent: rgb(245, 139, 74);
   /* Font Sizes */
   --fs-regular: 1rem;
   --fs-lg: 1.125rem;
@@ -91,6 +91,7 @@ ul li {
 
 body {
   line-height: 1.6;
+  font-size: var(--fs-lg);
 }
 
 a:link,
@@ -166,6 +167,26 @@ nav ul {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  padding-inline: 5em;
+}
+
+.hero__text-subheading {
+  font-size: var(--fs-sm);
+  letter-spacing: 1px;
+}
+
+.hero__text-heading {
+  font-size: var(--fs-3xl);
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+
+.hero__text-heading span {
+  color: var(--clr-text-accent);
+}
+
+.hero__text-p {
+  max-width: 45ch;
 }
 
 .hero-image {
@@ -173,4 +194,10 @@ nav ul {
   background-position: center center;
   background-size: cover;
   width: 50%;
+}
+
+.hero-link {
+  font-size: var(--fs-2xl);
+  color: var(--clr-text-accent);
+  font-weight: 600;
 }
