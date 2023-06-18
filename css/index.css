@@ -202,7 +202,7 @@ nav ul {
 }
 
 .hero-link {
-  font-size: var(--fs-2xl);
+  font-size: var(--fs-xl);
   color: var(--clr-text-accent);
   font-weight: 600;
 }
