@@ -231,12 +231,8 @@ nav ul {
   display: flex;
   flex-wrap: wrap;
   gap: 8.125rem;
-  padding-block: 5em;
+  padding-block: 8em;
   justify-content: center;
-}
-
-.child2 {
-  transform: translateY(50px);
 }
 
 .pet__card {
@@ -244,11 +240,16 @@ nav ul {
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 1px 15px #0b0b0b;
+  color: var(--clr-text-main);
+}
+
+a:nth-child(odd) .pet__card {
+  transform: translateY(-50px);
 }
 
 .pet__card-image {
   height: 200px;
-  max-width: 260px;
+  width: 260px;
 }
 
 .pet__card-details {
@@ -274,7 +275,8 @@ nav ul {
   padding: 1em 1.75em;
   color: white;
   margin-inline: auto;
-  margin-top: 1.5rem;
+  margin-top: 1.5em;
+  margin-bottom: 2.5em;
 }
 
 .overlay {
