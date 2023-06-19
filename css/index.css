@@ -131,7 +131,7 @@ nav ul {
 
 .main__nav-item a {
   color: var(--clr-text-main);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .dog {
@@ -224,7 +224,7 @@ nav ul {
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .pets-container {
@@ -232,7 +232,6 @@ nav ul {
   flex-wrap: wrap;
   gap: 8.125rem;
   padding-block: 8em;
-  justify-content: center;
 }
 
 .pet__card {
@@ -298,12 +297,13 @@ a:nth-child(odd) .pet__card {
 .adopt__process-heading {
   text-align: center;
   font-size: var(--fs-2xl);
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .adopt__process-step {
   max-width: fit-content;
-  box-shadow: 0 1px 15px #0b0b0b;
+  box-shadow: 0 1px 8px #0b0b0b;
+  border-radius: 8px;
 }
 
 .adopt__process-step--image {
