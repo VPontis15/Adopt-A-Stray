@@ -288,7 +288,29 @@ a:nth-child(odd) .pet__card {
   clip-path: polygon(0 0, 67% 0, 46% 100%, 0% 100%);
 }
 
+.adopt-process {
+  display: flex;
+}
+
 .adopt__process-heading {
   text-align: center;
   font-size: var(--fs-2xl);
+  margin-bottom: 3rem;
+}
+
+.adopt__process-step {
+  max-width: fit-content;
+  box-shadow: 0 1px 15px #0b0b0b;
+}
+
+.adopt__process-step--image {
+  height: 100px;
+  margin-inline: auto;
+  padding: 1em;
+}
+
+.adopt__process-step--p {
+  max-width: 35ch;
+  font-size: var(--fs-sm);
+  padding: 1.25em;
 }
