@@ -276,7 +276,7 @@ a:nth-child(odd) .pet__card {
   color: white;
   margin-inline: auto;
   margin-top: 1.5em;
-  margin-bottom: 2.5em;
+  margin-bottom: 3rem;
 }
 
 .overlay {
@@ -290,6 +290,9 @@ a:nth-child(odd) .pet__card {
 
 .adopt-process {
   display: flex;
+  gap: 1.9375rem;
+  padding-block: 4em;
+  justify-content: center;
 }
 
 .adopt__process-heading {
