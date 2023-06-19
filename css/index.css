@@ -175,7 +175,7 @@ nav ul {
 }
 
 .hero__text-subheading {
-  font-size: var(--fs-sm);
+  font-size: var(--fs-regular);
   letter-spacing: 1px;
 }
 
@@ -244,7 +244,7 @@ nav ul {
 }
 
 a:nth-child(odd) .pet__card {
-  transform: translateY(-50px);
+  transform: translateY(-80px);
 }
 
 .pet__card-image {
