@@ -155,3 +155,10 @@ nav ul {
   background-color: var(--clr-text-main);
   padding: 0.5em 3em;
 }
+
+.hero-image {
+  background-image: url(../images/pets-hero.jpg);
+  background-size: cover;
+  background-position: center center;
+  min-height: 70vh;
+}
