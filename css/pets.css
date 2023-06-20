@@ -162,3 +162,11 @@ nav ul {
   background-position: center center;
   min-height: 70vh;
 }
+
+.summary > * + * {
+  margin-bottom: 0.75em;
+}
+
+.summary-heading {
+  margin-bottom: 0.5em;
+}
