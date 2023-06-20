@@ -156,13 +156,55 @@ nav ul {
   padding: 0.5em 3em;
 }
 
+.main-container {
+  max-width: min(95%, 1440px);
+  margin-inline: auto;
+}
+
 .hero-image {
   background-image: url(../images/pets-hero.jpg);
   background-size: cover;
   background-position: center center;
   min-height: 70vh;
+  max-width: 100%;
+  margin-bottom: 3em;
 }
 
-.summary > * + * {
-  margin-bottom: 0.5em;
+.summary {
+  display: flex;
+  gap: 6rem;
+  justify-content: space-between;
+}
+
+.summary__text > * + * {
+  margin-bottom: 1.25em;
+}
+
+.summary__text-heading {
+  padding: 0.25em 0.75em;
+  color: #fff;
+  position: relative;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+.summary__text-heading::before {
+  content: "";
+  background-color: var(--clr-text-accent);
+  position: absolute;
+  inset: 0;
+  z-index: -100;
+  transform: skew(10deg);
+  border-radius: 5px;
+}
+
+.summary__text-p {
+  max-width: 75ch;
+}
+
+.summary-image {
+  height: 550px;
+  width: 425px;
+  max-width: 100%;
+  border-radius: 10px;
 }
