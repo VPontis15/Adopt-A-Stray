@@ -317,3 +317,56 @@ a:nth-child(odd) .pet__card {
   font-size: var(--fs-sm);
   padding: 1.25em;
 }
+
+footer {
+  background-color: var(--clr-bg-grey);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  padding-block: 5em;
+}
+
+.contact {
+  margin-inline: auto;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.footer-image {
+  width: 50px;
+  border-radius: 50%;
+  mix-blend-mode: multiply;
+}
+
+.socials-image {
+  mix-blend-mode: multiply;
+}
+
+.footer-p {
+  margin-bottom: 1rem;
+}
+
+.footer-image {
+  margin-bottom: 1rem;
+}
+
+.email {
+  padding: 0.5em;
+  border-radius: 17px;
+  border: 1px solid var(--clr-text-accent);
+  color: var(--clr-text-accent);
+  display: block;
+}
+
+.sumbit {
+  padding: 0.5em 2em;
+  margin-top: 1.125rem;
+  background-color: var(--clr-text-accent);
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+}
