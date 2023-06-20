@@ -164,9 +164,5 @@ nav ul {
 }
 
 .summary > * + * {
-  margin-bottom: 0.75em;
-}
-
-.summary-heading {
   margin-bottom: 0.5em;
 }
