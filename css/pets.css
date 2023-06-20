@@ -70,6 +70,7 @@ h6 {
   --clr-bg-accent: hwb(23 16% 0% / 0.22);
   --clr-text-main: #0b0b0b;
   --clr-text-accent: #f58b4a;
+  --clr-bg-btn: #e9a073;
   /* Font Sizes */
   --fs-regular: 1rem;
   --fs-lg: 1.125rem;
@@ -253,6 +254,39 @@ nav ul {
 .pet__card-details--gender {
   width: 57px;
   height: 57px;
+}
+
+.pets-btns {
+  text-align: center;
+  margin-top: 5rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.pets-btns button {
+  text-align: center;
+  border: none;
+  padding: 0.5em 5em;
+  border-radius: 5px;
+  margin-bottom: 0.75rem;
+  cursor: pointer;
+}
+
+.btns-filters {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.active {
+  color: #fff;
+  background-color: var(--clr-text-accent);
+}
+
+.animal-btns {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .overlay {
