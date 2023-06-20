@@ -161,7 +161,7 @@
       </article>
     </section>
     <footer>
-      <section class="newsletter">
+      <section class="newsletter container footer-item">
         <h2 class="footer-heading">Newsletter</h2>
         <p class="footer-p">Ενημερωθείτε πρώτοι για τα νέα μας</p>
         <form action="">
@@ -172,26 +172,29 @@
             id="email"
             placeholder="Email |"
           />
-          <input type="button" value="Εγγραφή" class="Sumbit" />
+          <input type="button" value="Εγγραφή" class="sumbit" />
         </form>
       </section>
-      <section class="contact">
+      <section class="footer-item contact">
         <h2 class="footer-heading">Επικοινωνία</h2>
         <p class="footer-p">Θα χαρούμε να επικοινωνήσετε μαζί μας</p>
         <div class="row">
-          <img src="../images/phone-icon.png" alt="" />
+          <img class="footer-image" src="../images/phone-icon.png" alt="" />
           <p class="footer-number">30210243356</p>
-          <div class="row">
-            <img src="../images/email-icon.png" alt="" />
-            <p class="footer-email">example@gmail.com</p>
-          </div>
+        </div>
+        <div class="row">
+          <img class="footer-image" src="../images/email-icon.png" alt="" />
+
+          <a class="footer-email" href="mailto:someone@example.com"
+            >example@gmail.com</a
+          >
         </div>
       </section>
-      <section class="socials">
+      <section class="socials container footer-item">
         <h2 class="footer-heading">Social Media</h2>
         <p class="footer-p">Βρείτε μας στα πιο δημοφιλη socials</p>
         <div class="row">
-          <img src="../images/socials.jpg" alt="" />
+          <img class="socials-image" src="../images/socials.jpg" alt="" />
         </div>
       </section>
     </footer>
