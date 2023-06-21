@@ -128,6 +128,16 @@ nav ul {
 .main__nav-item a {
   color: var(--clr-text-main);
   font-weight: 700;
+  position: relative;
+}
+
+.main__nav-item a:hover::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 3px;
+  width: 100%;
+  background-color: var(--clr-text-accent);
 }
 
 .dog {
@@ -152,9 +162,21 @@ nav ul {
   padding: 0.5em 0.75em;
 }
 
+.advert:hover {
+  background-color: var(--clr-text-main);
+  color: var(--clr-text-accent);
+  transition: all 0.5s ease;
+}
+
 .donate {
   background-color: var(--clr-text-main);
   padding: 0.5em 3em;
+}
+
+.donate:hover {
+  color: var(--clr-text-main);
+  background-color: var(--clr-text-accent);
+  transition: all 0.5s ease;
 }
 
 .main-container {
