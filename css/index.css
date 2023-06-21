@@ -304,6 +304,17 @@ a:nth-child(odd) .pet__card {
   margin-bottom: 3rem;
 }
 
+.pets-link:hover {
+  background-color: var(--clr-text-main);
+  color: var(--clr-text-accent);
+  transform: translateY(-10px);
+  transition: all 0.25s ease-out;
+}
+
+.pets-link:active {
+  transform: translateY(5px);
+}
+
 .overlay {
   position: absolute;
   z-index: -100;
