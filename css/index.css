@@ -366,7 +366,7 @@ footer {
   background-color: var(--clr-bg-grey);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-
+  gap: 2rem;
   padding-block: 5em;
 }
 
@@ -388,6 +388,7 @@ footer {
 
 .socials-image {
   mix-blend-mode: multiply;
+  max-width: 300px;
 }
 
 .footer-p {
@@ -413,4 +414,11 @@ footer {
   color: #fff;
   border-radius: 20px;
   cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  footer {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
 }
