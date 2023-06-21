@@ -1,3 +1,8 @@
+/* CSS Reset by Josh W Comeau   https://www.joshwcomeau.com/css/custom-css-reset/*/
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
 *,
 *::before,
 *::after {
@@ -70,7 +75,6 @@ h6 {
   --clr-bg-accent: hwb(23 16% 0% / 0.22);
   --clr-text-main: #0b0b0b;
   --clr-text-accent: #f58b4a;
-  --clr-bg-btn: #e9a073;
   /* Font Sizes */
   --fs-regular: 1rem;
   --fs-lg: 1.125rem;
@@ -100,6 +104,17 @@ a:visited {
 .container {
   max-width: calc(100% - 260px);
   margin-inline: auto;
+}
+
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 700;
+  padding: 1em 2em;
+  border-radius: 8px;
+  font-size: var(--fs-regular);
 }
 
 header .container {
@@ -157,145 +172,87 @@ nav ul {
   padding: 0.5em 3em;
 }
 
-.main-container {
-  max-width: min(95%, 1440px);
+.hero {
+  margin-top: 10rem;
+  display: flex;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10rem;
+}
+
+table {
+  table-layout: fixed;
+  width: 40%;
+  text-align: center;
+
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 1.25rem;
+  font-size: 1.25rem;
+}
+
+table tr:nth-child(odd) {
+  background-color: var(--clr-bg-grey);
+}
+
+.adopt-link {
+  background-color: var(--clr-text-accent);
+}
+
+.share-link {
+  background-color: #2965ff;
+  position: relative;
+  display: inline-flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.share-link img {
+  width: 25px;
+  height: 25px;
+}
+
+.animal__details-img {
+  width: 60px;
+  height: 60px;
   margin-inline: auto;
 }
 
 .hero-image {
-  background-image: url(../images/pets-hero.jpg);
-  background-size: cover;
-  background-position: center center;
-  min-height: 100vh;
-  max-width: 100%;
-  margin-bottom: 3em;
-}
-
-.summary {
-  display: flex;
-  gap: 6rem;
-  justify-content: space-between;
-}
-
-.summary__text > * + * {
-  margin-bottom: 1.25em;
-}
-
-.summary__text-heading {
-  padding: 0.25em 0.75em;
-  color: #fff;
   position: relative;
-  margin-bottom: 1.5em;
-  text-align: center;
 }
 
-.summary__text-heading::before {
-  content: "";
-  background-color: var(--clr-text-accent);
+.hero-image img {
+  max-width: 800px;
+  max-height: 600px;
+}
+
+.hero-image:before {
   position: absolute;
-  inset: 0;
+  content: "";
+  inset: -30px -40px;
+  background: linear-gradient(
+    to bottom,
+    var(--clr-text-accent) 30%,
+    var(--clr-bg-grey)
+  );
+  height: 90%;
+  width: 100%;
   z-index: -100;
-  transform: skew(10deg);
-  border-radius: 5px;
 }
 
-.summary__text-p {
-  max-width: 75ch;
-}
-
-.summary-image {
-  height: 550px;
-  width: 425px;
-  max-width: 100%;
-  border-radius: 10px;
-}
-
-.pets {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  margin-bottom: 1rem;
-}
-
-.pets-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8.125rem;
-  padding-block: 8em;
-  justify-content: center;
-}
-
-.pet__card {
-  max-width: 300px;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 1px 15px #0b0b0b;
-  color: var(--clr-text-main);
-}
-
-.pet__card-image {
-  height: 200px;
-  width: 260px;
-  object-fit: cover;
-}
-
-.pet__card-details {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.75em;
-  background-color: #fff;
-}
-
-.pet__card-details--name {
-  font-size: var(--fs-xl);
-}
-
-.pet__card-details--gender {
-  width: 57px;
-  height: 57px;
-}
-
-.pets-btns {
-  text-align: center;
-  margin-top: 5rem;
+.paragraphs {
+  margin-top: 8rem;
   display: grid;
   gap: 1rem;
+  margin-bottom: 8rem;
 }
 
-.pets-btns button {
-  text-align: center;
-  border: none;
-  padding: 0.5em 5em;
-  border-radius: 5px;
-  margin-bottom: 0.75rem;
-  cursor: pointer;
-}
-
-.btns-filters {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-}
-
-.active {
-  color: #fff;
-  background-color: var(--clr-text-accent);
-}
-
-.animal-btns {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.overlay {
-  position: absolute;
-  z-index: -100;
-  width: 100%;
-  height: 100%;
-  background-color: var(--clr-bg-accent);
-  clip-path: polygon(0 0, 67% 0, 46% 100%, 0% 100%);
+.about-animal {
+  max-width: 90ch;
+  margin-left: 2.5em;
 }
 
 footer {
@@ -349,15 +306,4 @@ footer {
   color: #fff;
   border-radius: 20px;
   cursor: pointer;
-}
-
-.pagination {
-  display: flex;
-  gap: 3rem;
-}
-
-.pagination-btn {
-  background: none;
-  cursor: pointer;
-  border: none;
 }
