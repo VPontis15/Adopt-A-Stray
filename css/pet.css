@@ -248,8 +248,20 @@ table tr:nth-child(odd) {
   display: grid;
   gap: 1rem;
   margin-bottom: 8rem;
+  position: relative;
+  padding-block: 10em;
+  padding-inline: 4em;
+  line-height: 2.5;
 }
 
+.paragraphs::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--clr-bg-grey);
+  z-index: -100;
+  clip-path: polygon(0 15%, 100% 0, 100% 79%, 0 100%);
+}
 .about-animal {
   max-width: 90ch;
   margin-left: 2.5em;
