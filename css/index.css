@@ -176,14 +176,13 @@ nav ul {
   transition: all 0.5s ease;
 }
 
-.donate {
+.sign {
   background-color: var(--clr-text-main);
   padding: 0.5em 3em;
 }
 
-.donate:hover {
-  color: var(--clr-text-main);
-  background-color: var(--clr-text-accent);
+.sign:hover {
+  color: var(--clr-text-accent);
   transition: all 0.5s ease;
 }
 

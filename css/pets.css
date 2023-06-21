@@ -174,8 +174,7 @@ nav ul {
 }
 
 .donate:hover {
-  color: var(--clr-text-main);
-  background-color: var(--clr-text-accent);
+  color: var(--clr-text-accent);
   transition: all 0.5s ease;
 }
 
