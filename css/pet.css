@@ -102,7 +102,7 @@ a:visited {
 }
 
 .container {
-  max-width: calc(100% - 260px);
+  max-width: min(95%, 1440px);
   margin-inline: auto;
 }
 
