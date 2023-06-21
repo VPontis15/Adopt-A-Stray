@@ -70,6 +70,10 @@ h6 {
   isolation: isolate;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --clr-bg-grey: #e3e4e4;
   --clr-bg-accent: hwb(23 16% 0% / 0.22);
