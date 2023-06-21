@@ -187,8 +187,8 @@ nav ul {
 }
 
 .hero {
-  min-height: 90vh;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .hero__text {
@@ -220,10 +220,8 @@ nav ul {
 }
 
 .hero-image {
-  background-image: url(../images/hero2.jpg);
-  background-position: center center;
-  background-size: cover;
-  width: 50%;
+  max-width: 100%;
+  object-fit: cover;
 }
 
 .hero-link {
@@ -363,10 +361,14 @@ a:nth-child(odd) .pet__card {
 
 footer {
   background-color: var(--clr-bg-grey);
+
+  padding-block: 5em;
+}
+
+.footer-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  padding-block: 5em;
 }
 
 .contact {
