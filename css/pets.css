@@ -320,6 +320,27 @@ nav ul {
   clip-path: polygon(0 0, 67% 0, 46% 100%, 0% 100%);
 }
 
+.pagination {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.pagination-btn {
+  background: none;
+  cursor: pointer;
+  border: none;
+}
+
+.pagination-btn svg:hover {
+  fill: var(--clr-text-main);
+  transition: fill 0.25s ease-in;
+}
+.pagination-btn svg:active {
+  transform: scale(1.2);
+  transition: transform 0.1s ease-in;
+}
+
 footer {
   background-color: var(--clr-bg-grey);
   display: grid;
@@ -371,16 +392,4 @@ footer {
   color: #fff;
   border-radius: 20px;
   cursor: pointer;
-}
-
-.pagination {
-  display: flex;
-  gap: 3rem;
-  justify-content: center;
-}
-
-.pagination-btn {
-  background: none;
-  cursor: pointer;
-  border: none;
 }
