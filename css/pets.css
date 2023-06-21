@@ -261,6 +261,11 @@ nav ul {
   object-fit: cover;
 }
 
+.pet__card:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s ease-out;
+}
+
 .pet__card-details {
   display: flex;
   align-items: center;
