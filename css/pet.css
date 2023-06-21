@@ -243,6 +243,18 @@ table tr:nth-child(odd) {
   z-index: -100;
 }
 
+.paragraphs {
+  margin-top: 8rem;
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 8rem;
+}
+
+.about-animal {
+  max-width: 90ch;
+  margin-left: 2.5em;
+}
+
 footer {
   background-color: var(--clr-bg-grey);
   display: grid;
@@ -253,6 +265,12 @@ footer {
 
 .contact {
   margin-inline: auto;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
 .footer-image {
