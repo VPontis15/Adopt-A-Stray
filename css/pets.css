@@ -284,19 +284,28 @@ nav ul {
 }
 
 .pets-btns {
-  text-align: center;
   margin-top: 5rem;
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
 
 .pets-btns button {
   text-align: center;
   border: none;
-  padding: 0.5em 5em;
+  padding: 0.8em;
   border-radius: 5px;
   margin-bottom: 0.75rem;
   cursor: pointer;
+}
+
+.animal-btns {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.animal-btns button {
+  flex: 1;
 }
 
 .btns-filters {
@@ -305,15 +314,13 @@ nav ul {
   gap: 1.5rem;
 }
 
+.btns-filters button {
+  flex: 1;
+}
+
 .active {
   color: #fff;
   background-color: var(--clr-text-accent);
-}
-
-.animal-btns {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
 }
 
 .overlay {
@@ -410,6 +417,10 @@ footer {
 @media (max-width: 1000px) {
   .summary {
     justify-content: center;
+  }
+
+  .pets-btns {
+    grid-template-columns: 1fr;
   }
 
   .summary-image {
