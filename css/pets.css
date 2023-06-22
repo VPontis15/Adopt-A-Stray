@@ -185,10 +185,9 @@ nav ul {
 
 .hero-image {
   background-image: url(../images/pets-hero.jpg);
+
   background-size: cover;
-  background-position: center center;
   min-height: 100vh;
-  max-width: 100%;
   margin-bottom: 3em;
 }
 
@@ -196,6 +195,8 @@ nav ul {
   display: flex;
   gap: 6rem;
   justify-content: space-between;
+  text-overflow: balance;
+  padding: 1em;
 }
 
 .summary__text > * + * {
@@ -407,6 +408,13 @@ footer {
 }
 
 @media (max-width: 1000px) {
+  .summary {
+    justify-content: center;
+  }
+
+  .summary-image {
+    display: none;
+  }
   footer {
     grid-template-columns: 1fr;
     justify-content: center;
