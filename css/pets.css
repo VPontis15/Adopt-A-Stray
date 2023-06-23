@@ -417,7 +417,6 @@ footer {
 @media (max-width: 1000px) {
   .summary {
     justify-content: center;
-    gap: 1rem;
   }
 
   .pets-btns {
