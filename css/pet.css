@@ -119,9 +119,9 @@ a:visited {
 
 header .container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 0.5em;
+  justify-content: space-between;
 }
 
 header {
@@ -132,12 +132,13 @@ header {
 .main__nav {
   display: flex;
   align-items: center;
+  flex: 1;
 }
 
 nav ul {
   display: flex;
-  gap: 5.9rem;
-  margin-inline: auto;
+  flex: 1;
+  justify-content: space-around;
 }
 
 .main__nav-item a {
@@ -164,12 +165,29 @@ nav ul {
   display: flex;
   align-items: center;
   gap: 1.5rem;
+  margin-inline: auto;
 }
 
 .nav-links a {
   color: white;
   border-radius: 5px;
   font-weight: 600;
+}
+.desktop-hidden {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-inline: auto;
+}
+
+.desktop-hidden a {
+  color: white;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.desktop-hidden {
+  display: none;
 }
 
 .advert {
@@ -191,6 +209,18 @@ nav ul {
 .sign:hover {
   color: var(--clr-text-accent);
   transition: all 0.5s ease;
+}
+
+.mobile__nav-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.main-container {
+  max-width: min(95%, 1440px);
+  margin-inline: auto;
 }
 
 .hero {
@@ -348,5 +378,55 @@ footer {
   footer {
     grid-template-columns: 1fr;
     justify-content: center;
+  }
+
+  .mobile__nav-btn {
+    display: block;
+    position: relative;
+  }
+
+  .hidden {
+    display: none;
+    transition: all 0.75s ease-in-out;
+  }
+
+  .main__nav {
+    position: absolute;
+    top: 107px;
+    right: 0;
+    background-color: #fff;
+    padding: 1em 2em;
+    flex-direction: column;
+    min-height: 100vh;
+    z-index: 10;
+    text-align: center;
+    padding-inline: 5em;
+    transition: all 0.75s ease-in-out;
+  }
+
+  .nav-ul {
+    flex-direction: column;
+    justify-content: start;
+    padding: 1em 2em;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .desktop-hidden {
+    display: flex;
+  }
+}
+
+@media (max-width: 700px) {
+  .desktop-hidden {
+    display: none;
+  }
+  .nav-links {
+    display: flex;
+    flex-direction: column;
   }
 }

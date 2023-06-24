@@ -448,6 +448,18 @@ footer {
     justify-content: center;
   }
 
+  .pets-btns {
+    grid-template-columns: 1fr;
+  }
+
+  .summary-image {
+    display: none;
+  }
+  footer {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
   .mobile__nav-btn {
     display: block;
     position: relative;
@@ -486,17 +498,6 @@ footer {
 
   .desktop-hidden {
     display: flex;
-  }
-  .pets-btns {
-    grid-template-columns: 1fr;
-  }
-
-  .summary-image {
-    display: none;
-  }
-  footer {
-    grid-template-columns: 1fr;
-    justify-content: center;
   }
 }
 
