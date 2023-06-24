@@ -18,19 +18,31 @@
       <div class="container">
         <img src="../images/dogLogo.svg" alt="" class="main__nav-logo dog" />
 
-        <nav class="main__nav">
-          <ul>
+        <nav class="main__nav hidden">
+          <ul class="nav-ul">
             <li class="main__nav-item"><a href="index.html">Αρχική</a></li>
             <li class="main__nav-item">
               <a href="pets.html">Βρείτε κατοικίδιο</a>
             </li>
             <li class="main__nav-item"><a href="#">Ποιοι είμαστε</a></li>
           </ul>
+          <div class="nav-links">
+            <a href="" class="nav__link advert">Καταχώρηση αγγελίας</a>
+            <a href="" class="nav__link sign">Συνδέσου</a>
+          </div>
         </nav>
-        <div class="nav-links">
+        <div class="desktop-hidden">
           <a href="" class="nav__link advert">Καταχώρηση αγγελίας</a>
           <a href="" class="nav__link sign">Συνδέσου</a>
         </div>
+
+        <button class="mobile__nav-btn">
+          <img
+            class="mobile__nav-btn--icon"
+            src="../images/burger-menu-svgrepo-com.svg"
+            alt=""
+          />
+        </button>
       </div>
     </header>
     <main class="hero container">
