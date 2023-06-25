@@ -227,11 +227,11 @@ nav ul {
   margin-top: 10rem;
   display: flex;
   align-items: center;
-  grid-template-columns: repeat(2, 1fr);
+
   gap: 10rem;
 }
 
-table {
+.animal__details {
   table-layout: fixed;
   width: 40%;
   text-align: center;
@@ -254,9 +254,9 @@ table tr:nth-child(odd) {
 
 .share-link {
   background-color: #2965ff;
-  position: relative;
+  gap: 0.25rem;
   display: inline-flex;
-  gap: 1rem;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -374,7 +374,28 @@ footer {
   cursor: pointer;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
+  .paragraphs {
+    padding-inline: 1.5em;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .animal-image {
+    display: flex;
+  }
+
+  .animal-image {
+    flex: 1;
+  }
+
+  .animal__details {
+    max-width: 100%;
+    width: 80%;
+  }
+
   footer {
     grid-template-columns: 1fr;
     justify-content: center;
@@ -422,6 +443,15 @@ footer {
 }
 
 @media (max-width: 700px) {
+  .animal__details {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .paragraphs {
+    padding-inline: 0;
+  }
+
   .desktop-hidden {
     display: none;
   }
