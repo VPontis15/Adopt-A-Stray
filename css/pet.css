@@ -273,18 +273,20 @@ table tr:nth-child(odd) {
 
 .hero-image {
   position: relative;
+  display: flex;
 }
 
 .hero-image img {
-  max-width: 800px;
   max-height: 600px;
   border-radius: 10px;
+  object-fit: cover;
+  object-position: center center;
 }
 
 .hero-image:before {
   position: absolute;
   content: "";
-  inset: -30px -40px;
+  inset: -30px -30px;
   background: linear-gradient(
     to bottom,
     var(--clr-text-accent) 30%,
