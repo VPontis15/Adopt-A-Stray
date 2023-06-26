@@ -377,6 +377,9 @@ footer {
 }
 
 @media (max-width: 1100px) {
+  body {
+    overflow-x: hidden;
+  }
   .paragraphs {
     padding-inline: 1.5em;
   }
@@ -409,8 +412,9 @@ footer {
   }
 
   .hidden {
-    display: none;
-    transition: all 0.75s ease-in-out;
+    translate: 500px;
+    animation: 0.75s ease-in-out slideInNav;
+    transition: all 0.75s ease-in;
   }
 
   .main__nav {
@@ -425,6 +429,8 @@ footer {
     text-align: center;
     padding-inline: 5em;
     transition: all 0.75s ease-in-out;
+
+    animation: 0.75s ease-in-out slideOutNav;
   }
 
   .nav-ul {
@@ -460,5 +466,28 @@ footer {
   .nav-links {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@keyframes slideInNav {
+  0% {
+    opacity: 0;
+    transform: translateX(500px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideOutNav {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(500px);
   }
 }
