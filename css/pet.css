@@ -429,7 +429,6 @@ footer {
     text-align: center;
     padding-inline: 5em;
     transition: all 0.75s ease-in-out;
-
     animation: 0.75s ease-in-out slideOutNav;
   }
 

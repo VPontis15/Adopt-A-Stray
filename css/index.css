@@ -448,6 +448,10 @@ footer {
 }
 
 @media (max-width: 1000px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .footer-content {
     grid-template-columns: 1fr;
     justify-content: center;
@@ -482,8 +486,9 @@ footer {
   }
 
   .hidden {
-    display: none;
-    transition: all 0.75s ease-in-out;
+    translate: 500px;
+    animation: 0.75s ease-in-out slideInNav;
+    transition: all 0.75s ease-in;
   }
 
   .main__nav {
@@ -498,6 +503,7 @@ footer {
     text-align: center;
     padding-inline: 5em;
     transition: all 0.75s ease-in-out;
+    animation: 0.75s ease-in-out slideOutNav;
   }
 
   .nav-ul {
