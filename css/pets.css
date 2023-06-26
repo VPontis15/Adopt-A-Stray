@@ -483,7 +483,7 @@ footer {
     padding: 1em 2em;
     flex-direction: column;
     min-height: 100vh;
-    z-index: 10;
+    z-index: 100;
     text-align: center;
     padding-inline: 5em;
     transition: all 0.75s ease-in-out;
@@ -514,5 +514,28 @@ footer {
   .nav-links {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@keyframes slideInNav {
+  0% {
+    opacity: 0;
+    transform: translateX(500px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideOutNav {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(500px);
   }
 }
