@@ -253,6 +253,8 @@ nav ul {
 .hero-image {
   max-width: 100%;
   object-fit: cover;
+  display: grid;
+  z-index: -100;
 }
 
 .hero-link {
@@ -502,8 +504,8 @@ footer {
     z-index: 100;
     text-align: center;
     padding-inline: 5em;
-    transition: all 0.75s ease-in-out;
     animation: 0.75s ease-in-out slideOutNav;
+    transition: all 0.75s ease-in-out;
   }
 
   .nav-ul {
@@ -535,12 +537,10 @@ footer {
 
 @keyframes slideInNav {
   0% {
-    opacity: 0;
     transform: translateX(500px);
   }
 
   100% {
-    opacity: 1;
     transform: translateX(0);
   }
 }
